@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arjay Lipio's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+      <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- fontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/7e5f956b51.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.png" class="logo" alt="Logo" />
+          <ul id="sideMenu">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li><a href="#portfolio">Portfolio </a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="left-right">
+          <div class="header-text">
+            <p>Mobile Developer</p>
+            <h1>Hi, I'm <span>Arjay </span><br />From Philippines</h1>
+          </div>
+          <div>
+            <img src="img/bg.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/user.jpg" alt="My Picture" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Analytical and detail oriented Android app developer professional
+              with stellar communication skills. Adept at bringing all team
+              members together to reach a common goal on time and under budget.
+              Conceptualizing app solutions with the latest technology, design
+              theory, and a large dose of creativity. Committed to viable and
+              easily functional app solutions for clients.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <div class="skills">
+                <div class="details">
+                  <span>Kotlin</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar">
+                  <div id="kotlin-bar"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="details">
+                  <span>Java</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar">
+                  <div id="java-bar"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="details">
+                  <span>C#</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar">
+                  <div id="c-bar"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="details">
+                  <span>Javascript</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar">
+                  <div id="javascript-bar"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="details">
+                  <span>VB.net</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar">
+                  <div id="vb-bar"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="details">
+                  <span>C++</span>
+                  <span>60%</span>
+                </div>
+                <div class="bar">
+                  <div id="cplus-bar"></div>
+                </div>
+              </div>
+
+              <div class="skills">
+                <div class="details">
+                  <span>Python</span>
+                  <span>60%</span>
+                </div>
+                <div class="bar">
+                  <div id="python-bar"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022-Present</span><br />Android Developer at QUX TV/
+                  DOTReady
+                </li>
+                <li>
+                  <span>2021-2022</span><br />Android Developer at Accenture
+                </li>
+                <li>
+                  <span>2020-2021</span><br />Android Developer at Globe Fintech
+                  Innovations Inc
+                </li>
+                <li>
+                  <span>2020-2021</span><br />Android Developer at Multysis
+                  Technology Corporation
+                </li>
+                <li>
+                  <span>2019-2020</span><br />Jr. Android Developer at MDS Call
+                  Solution Inc.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2006-2018</span><br />
+                  Bachelor of Science in Computer Science at Institute of
+                  Creative Computer Technology
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fab fa-brands fa-android"></i>
+            <h2>Game Developer</h2>
+            <p>
+              Game Developer help build the next generation of games for your
+              company. It is responsible for coding the initial base engine of
+              the game, fixing bugs, and troubleshooting design issues. It may
+              also required to help develop storylines, characters, levels,
+              puzzles, and contribute to the overall game concept.
+              <br />
+              <br />
+              Video Game Developer Responsibilities:
+            </p>
+            <br />
+            <ul>
+              <li>Meeting with the design team to discuss game concepts.</li>
+              <li>Contributing to the overall game concept and storyline.</li>
+              <li>Generating game scripts and storyboards.</li>
+              <li>Translating design ideas into a functional game code.</li>
+              <li>Coding the base engine of the game.</li>
+              <li>Contributing to audio and animation design.</li>
+              <li>Animating characters and creating levels.</li>
+              <li>Developing game milestones and checkpoints.</li>
+              <li>Troubleshooting code and fixing bugs.</li>
+              <li>
+                Creating game specifications and designing expansion packs.
+              </li>
+            </ul>
+
+            <!-- <a href="#">Learn More...</a> -->
+          </div>
+          <div>
+            <i class="fas fa-solid fa-mobile"></i>
+            <h2>Mobile Developer</h2>
+            <p>
+              Mobile developers are specialise in mobile technology such as
+              building apps.
+              <br />
+              <br />
+              The typical responsibilities of mobile developers include:
+            </p>
+            <br />
+            <ul>
+              <li>
+                Discussing the client’s requirements and the proposed solution
+                with colleagues.
+              </li>
+              <li>
+                Developing application programming interfaces (APIs) to support
+                mobile functionality.
+              </li>
+              <li>
+                Keeping up to date with the terminology, concepts and best
+                practices for coding mobile apps.
+              </li>
+              <li>Using and adapting existing web applications for apps.</li>
+              <li>
+                Working closely with colleagues to constantly innovate app
+                functionality and design.
+              </li>
+            </ul>
+
+            <!-- <a href="#">Learn More...</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/gcash.png" alt="Gcash App" />
+            <div class="layer">
+              <h3>Gcash App</h3>
+              <p>
+                A mobile wallet app that lets you instantly pay bills, buy load,
+                send money, shop, and more – all in the safety of your own home!
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.globe.gcash.android"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/qantas.png" alt="Qantas App" />
+            <div class="layer">
+              <h3>Qantas App</h3>
+              <p>
+                Book flights and hotels, check in, access your boarding pass,
+                plus explore entertainment options before you fly and more.
+              </p>
+              <a
+                href="https://play.google.com/store/apps/details?id=au.com.qantas.qantas&hl=en&gl=US"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/qux.png" alt="Qux App" />
+            <div class="layer">
+              <h3>Qux App</h3>
+              <p>
+                Quantum (Q) User Experience (UX) - disruptive technology
+                designed to change how we interface with the Intergalactic
+                Computer Network (Internet).
+              </p>
+              <a href="https://qux.tv/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/bayadCenter.png" alt="Bayad Center App" />
+            <div class="layer">
+              <h3>Bayad Center App</h3>
+              <p>
+                Bayad Center is one of the most popular payment portal in the
+                Philippines with over 1,000 types of bills and financial
+                transactions available. Now with their official app, these
+                transactions are now under your fingertips.
+              </p>
+              <a
+                href="https://www.multisyscorp.com/news/bayad-center-app-is-now-available-for-android-and-ios"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/" class="btn">See More...</a>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> arjaylipio@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> +63 9977720085</p>
+            <div class="social-icons">
+              <!-- <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook"></i
+              ></a> -->
+              <a href="https://www.linkedin.com"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="img/LIPIO-ARJAY-RESUME_NEW.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="sample@gmail.com"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Arjay Lipio, Made by OkjaOkja</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
